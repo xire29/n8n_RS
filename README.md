@@ -1,5 +1,13 @@
 # Technical Documentation - Movie Recommendation System Using NLP
 
+## Project Overview
+
+**Movie Recommendation System Using NLP** is a full-stack semantic search application leveraging vector embeddings for intelligent movie recommendations. The **React 18.3 + TypeScript** frontend features a chat interface with UUID-based session management and localStorage persistence. The backend uses **n8n workflows** integrated with **Google Gemini's text-embedding-004** to generate 768-dimensional vectors from natural language queries. User preferences are extracted via NLP, converted to embeddings, and queried against a **Qdrant vector database** (IMDB top 1000 movies) using cosine similarity search with HNSW indexing. The system supports parallel embedding generation, multi-turn conversations via Window Buffer Memory, and delivers sub-5-second recommendations.
+
+**Technical Stack**: React SPA + TypeScript, Tailwind CSS, Vite, n8n orchestration, Google Gemini API, Qdrant Cloud, average_vector strategy, Vercel-ready deployment.
+
+---
+
 ## Table of Contents
 1. [System Architecture](#system-architecture)
 2. [Technology Stack](#technology-stack)
